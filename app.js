@@ -24,3 +24,37 @@ selectBtn.addEventListener('click', () => {
   
   document.getElementById('popup').style.display = 'none';
 });
+
+
+
+
+
+
+function openModal(element) {
+
+  const title = element.getAttribute('data-title');
+  const description = element.getAttribute('data-description');
+  const imageSrc = element.getAttribute('data-image');
+  const Rs = element.getAttribute('data-rs');
+  
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalDescription').textContent = description;
+  document.getElementById('modalImage').src = imageSrc;
+  document.getElementById('modalrs').textContent = Rs;
+
+  
+  document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+
+  document.getElementById('modal').style.display = 'none';
+}
+
+
+window.onclick = function(event) {
+  const modal = document.getElementById('modal');
+  if (event.target === modal) {
+    closeModal();
+  }
+};

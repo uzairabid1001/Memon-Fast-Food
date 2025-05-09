@@ -213,15 +213,14 @@ border: none;
    
 }
 
-
+a{
+  text-decoration: none;
+}
 .menu-item:hover {
   background-color:rgba(236,233,164,255);
   color: rgba(193,140,37,255);
 }
-a:hover {
-  background-color:rgba(236,233,164,255);
-  color: rgba(193,140,37,255);
-}
+
 .menu-item.active {
   background-color:rgba(236,233,164,255);
     color: rgba(193,140,37,255);
@@ -241,11 +240,7 @@ a:hover {
         height: 35px;
     }
 }
-a{
-    color: rgba(193,140,37,255);
-    text-decoration: none;
-    border-radius: 25px;
-}
+
 .head{
   background-color:rgba(236,233,164,255);
   color: rgba(193,140,37,255);
@@ -340,3 +335,62 @@ a{
     height: 250px;
   }
 }
+/* Toggle Button */
+.top-button {
+  background-color:rgba(236,233,164,255);
+padding: 20px;
+color: rgba(193,140,37,255);
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+ border-radius: 20px;
+}
+
+
+
+
+
+/* Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+
